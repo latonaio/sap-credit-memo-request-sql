@@ -26,7 +26,7 @@ CREATE TABLE `sap_credit_memo_request_item_pricing_element_data`
   `PricingScaleBasis`              varchar(3) DEFAULT NULL,
   `ConditionScaleBasisValue`       varchar(13) DEFAULT NULL,
   `ConditionScaleBasisUnit`        varchar(3) DEFAULT NULL,
-  `ConditionScaleBasisCurrency`    varchar(5) DEFAULT NULL,z
+  `ConditionScaleBasisCurrency`    varchar(5) DEFAULT NULL,
   `ConditionIsManuallyChanged`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`CreditMemoRequest`, `CreditMemoRequestItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
     CONSTRAINT `SAPCreditMemoRequestItemPricingElementData_fk` FOREIGN KEY (`CreditMemoRequest`) REFERENCES `sap_credit_memo_request_header_data` (`CreditMemoRequest`)
